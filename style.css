@@ -1,0 +1,65 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* INNER CONTAINER */
+.modal-inner {
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  transform: translateY(-50px);
+  transition: transform 0.3s ease;
+}
+
+.modal.open .modal-inner {
+  transform: translateY(0);
+}
+
+/* IMAGE */
+.modal-inner img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+/* FIGURE RESET */
+.modal-inner figure {
+  margin: 0;
+}
+
+/* BUTTONS */
+.modal button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* CLOSE BUTTON POSITION */
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+}

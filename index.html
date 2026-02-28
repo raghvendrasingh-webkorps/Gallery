@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gallery gallery1"><img
+        src="https://picsum.photos/200/200?random=1"
+        title="Mountain"
+        data-description="Beautiful mountain view"
+        tabindex="0"
+      /><img
+        src="https://picsum.photos/200/200?random=2"
+        title="Forest"
+        data-description="Green forest landscape"
+        tabindex="0"
+      /><img
+        src="https://picsum.photos/200/200?random=3"
+        title="Beach"
+        data-description="Sunny beach side"
+        tabindex="0"
+      />
+    </div>
+
+    <div class="gallery gallery2"><img
+        src="https://picsum.photos/200/200?random=4"
+        title="City"
+        data-description="Modern city view"
+        tabindex="0"
+      /><img
+        src="https://picsum.photos/200/200?random=5"
+        title="Desert"
+        data-description="Hot desert scene"
+        tabindex="0"
+      /><img
+        src="https://picsum.photos/200/200?random=6"
+        title="Lake"
+        data-description="Beautiful view"
+        tabindex="0"
+      />
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-inner">
+        <button class="close" aria-label="Close">×</button>
+        <button aria-label="Previous Photo" class="prev">←</button>
+
+        <figure>
+          <img src="" alt="" />
+          <figcaption>
+            <h2></h2>
+            <p></p>
+          </figcaption>
+        </figure>
+
+        <button class="next" aria-label="Next Photo">→</button>
+      </div>
+    </div>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
